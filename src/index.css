@@ -1,6 +1,6 @@
 /* ELEMENT STYLES */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700); */
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: Geneva, "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 a {
@@ -29,7 +29,7 @@ nav {
 nav span {
   font-size: 24px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: bold;
   line-height: 21px;
   letter-spacing: normal;
   text-align: left;
@@ -45,4 +45,46 @@ nav ul {
 nav li {
   display: inline;
   padding: 0 20px;
+}
+
+/* FORM STYLES */
+
+.form-container {
+  max-width: 500px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.form-title {
+  text-align: center;
+  color: #155e98;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  /* font-family: Geneva, "Segoe UI", Tahoma, Verdana, sans-serif; */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  font-family: Geneva, "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

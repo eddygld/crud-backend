@@ -62,8 +62,8 @@ class LogExercise extends Component {
     render() {
 
         return (
-            <div>
-                <h3>Create New Exercise Log</h3>
+            <div className="form-container">
+                <h3 className="form-title">Create New Exercise Log</h3>
                 <form onSubmit={this.handleSubmit} >
                     <div>
                         <label>Username: </label>
