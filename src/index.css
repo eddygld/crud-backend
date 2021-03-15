@@ -49,6 +49,10 @@ nav li {
 
 /* FORM STYLES */
 
+.content-container {
+  margin: 20px;
+}
+
 .form-container {
   max-width: 500px;
   border-radius: 20px;
@@ -80,6 +84,7 @@ select {
 input[type="submit"] {
   width: 100%;
   font-family: Geneva, "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-size: 16px;
   background-color: #2196f3;
   color: #ffffff;
   padding: 14px 20px;

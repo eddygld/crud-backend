@@ -62,54 +62,56 @@ class LogExercise extends Component {
     render() {
 
         return (
-            <div className="form-container">
-                <h3 className="form-title">Create New Exercise Log</h3>
-                <form onSubmit={this.handleSubmit} >
-                    <div>
-                        <label>Username: </label>
-                        <select 
-                            ref="userInput"
-                            required
-                            value={this.state.username}
-                            onChange={this.handleUsernameChange}>
-                            { this.state.users.map( user => 
-                            <option 
-                                key={user} 
-                                value={user}>
-                                    {user}
-
-                            </option> ) }
-                        </select>
-                    </div>
-                    <div>
-                        <label>Description: </label>
-                        <input
-                            type="text"
-                            value={this.state.description}
-                            onChange={this.handleDescriptionChange} 
-                        />
-                    </div>
-                    <div>
-                        <label>Duration (in minutes): </label>
-                        <input
-                            type="text"
-                            value={this.state.duration}
-                            onChange={this.handleDurationChange} 
-                        />
-                    </div>
-                    <div>
-                        <label>Date: </label>
+            <div className="content-container">
+                <div className="form-container">
+                    <h3 className="form-title">Create New Exercise Log</h3>
+                    <form onSubmit={this.handleSubmit} >
                         <div>
-                            <DatePicker
-                                selected={this.state.date}
-                                onChange={this.handleDateChange} 
+                            <label>Username: </label>
+                            <select 
+                                ref="userInput"
+                                required
+                                value={this.state.username}
+                                onChange={this.handleUsernameChange}>
+                                { this.state.users.map( user => 
+                                <option 
+                                    key={user} 
+                                    value={user}>
+                                        {user}
+
+                                </option> ) }
+                            </select>
+                        </div>
+                        <div>
+                            <label>Description: </label>
+                            <input
+                                type="text"
+                                value={this.state.description}
+                                onChange={this.handleDescriptionChange} 
                             />
                         </div>
-                    </div>
-                    <div>
-                        <input type="submit" value="Create Exercise Log" />
-                    </div>
-                </form>
+                        <div>
+                            <label>Duration (in minutes): </label>
+                            <input
+                                type="text"
+                                value={this.state.duration}
+                                onChange={this.handleDurationChange} 
+                            />
+                        </div>
+                        <div>
+                            <label>Date: </label>
+                            <div>
+                                <DatePicker
+                                    selected={this.state.date}
+                                    onChange={this.handleDateChange} 
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Create Exercise Log" />
+                        </div>
+                    </form>
+                </div>
             </div>
         )
     }
