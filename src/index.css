@@ -93,3 +93,32 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+  /* RESPONSIVE NAVIGATION */
+
+  nav {
+    padding: 10px 0 0;
+  }
+
+  nav span {
+    padding-left: 10px;
+  }
+
+  nav ul {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 0;
+    border-bottom: 1px solid #ffffff;
+  }
+}

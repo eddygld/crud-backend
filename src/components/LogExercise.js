@@ -55,7 +55,7 @@ class LogExercise extends Component {
 
         console.log(exercise);
 
-        window.location = '/';
+        // window.location = '/';
 
     }
 
