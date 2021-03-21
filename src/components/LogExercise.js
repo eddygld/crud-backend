@@ -24,6 +24,7 @@ class LogExercise extends Component {
                     });
                 }
             })
+            .catch(error=> { console.log('Error fetching and parsing data', error)});
     }
 
     handleUsernameChange = (e) => {
