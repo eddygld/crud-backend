@@ -21,14 +21,14 @@ class CreateUser extends Component {
             username: this.state.username,
         }
 
-        // console.log(user);
-
         axios.post('http://localhost:5000/users/add', user)
             .then(res=> { console.log(res.data); })
             .catch(error=> { console.log('Error postiong data', error)});
 
 
-        this.setState({username: ''})
+        this.setState({username: ''});
+
+        window.location.href = '/';
 
 
     }

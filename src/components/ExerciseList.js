@@ -35,8 +35,8 @@ class ExerciseList extends Component {
 
     render() {
         return (
-            <div>
-                <h3> Logged Exercises </h3>
+            <div className="content-container" >
+                <h1> LOGGED EXERCISES </h1>
                 <table>
                     <thead>
                         <tr>
