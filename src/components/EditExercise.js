@@ -72,14 +72,12 @@ class EditExercise extends Component {
             date: this.state.date
         }
 
-        // console.log(exercise);
-
         axios.post(`http://localhost:5000/exercises/update/${this.props.match.params.id}`, exercise)
             .then(res=> { console.log(res.data); })
             .catch(error=> { console.log('Error postiong data', error)});
 
 
-        // window.location = '/';
+            window.location.href = '/';
 
     }
 

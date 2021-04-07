@@ -206,4 +206,46 @@ table tbody a:hover {
     padding: 0 0;
     border-bottom: 1px solid #ffffff;
   }
+
+  /* RESPONSIVE TABLE */
+
+  table {
+    box-shadow: none;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tbody tr {
+    border-radius: 20px 20px 0 0;
+    border: 1px solid #dddddd;
+    border-bottom: 3px solid #dddddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #dddddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
