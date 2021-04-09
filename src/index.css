@@ -15,19 +15,19 @@ body {
 
 /* NAVIGATION STYLES */
 
-nav a {
+.topnav a {
   text-decoration: none;
   color: #ffffff;
 }
 
-nav {
+.topnav {
   width: 100%;
   background-color: #2196f3;
   min-height: 35px;
   padding: 10px;
 }
 
-nav span {
+.topnav span {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -36,17 +36,20 @@ nav span {
   text-align: left;
 }
 
-nav ul {
+.topnav ul {
   float: right;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
 
-nav li {
+.topnav li {
   display: inline;
   font-weight: 400;
   padding: 0 20px;
+}
+.topnav .icon {
+  display: none;
 }
 
 /* LAYOUT STYLES */
@@ -112,7 +115,7 @@ table {
   /* width: 100%; */
   margin: 25px auto;
   /* font-size: 0.9em; */
-  min-width: 400px;
+  min-width: 280px;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -184,26 +187,66 @@ table tbody a:hover {
 @media screen and (max-width: 600px) {
   /* RESPONSIVE NAVIGATION */
 
-  nav {
-    padding: 10px 0 0;
+  .topnav {
+    padding: 10px 0 7px;
   }
 
-  nav span {
+  .topnav span {
     padding-left: 10px;
   }
 
-  nav ul {
+  .topnav ul {
+    float: right;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .topnav li {
+    display: none;
+    /* line-height: 40px; */
+    /* height: 40px; */
+    /* padding: 0 0; */
+    /* border-bottom: 1px solid #ffffff; */
+  }
+
+  .topnav .icon {
+    display: block;
+  }
+
+  /* FOR HAMBURGER MENU RESPONSIVENESS */
+
+  .icon-btn {
+    border: none;
+    background-color: #2196f3;
+  }
+
+  .topnav.responsive {
+    padding: 10px 0 0;
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+
+  .topnav.responsive ul {
     float: none;
     text-align: center;
     margin: 0 auto;
     padding: 0;
   }
 
-  nav li {
+  .topnav.responsive li {
     display: block;
     line-height: 40px;
     height: 40px;
     padding: 0 0;
+  }
+
+  .topnav.responsive li:not(:last-child) {
     border-bottom: 1px solid #ffffff;
   }
 
@@ -213,14 +256,8 @@ table tbody a:hover {
     box-shadow: none;
   }
 
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  table thead tr {
+    display: none;
   }
 
   table tbody tr {
